@@ -1,0 +1,255 @@
+body {
+    color: #000000;
+    font-family: 'Open Sans';
+}
+
+.all {
+    position: relative;
+}
+
+nav {
+    display: flex;
+    color: #FFFFFF;
+    background-color: #000000;
+    position: fixed;
+    height: 80px;
+    right: 0%;
+    top: 0%;
+    width: 100%;
+    z-index: 10;
+}
+
+.burgercheck, .burger {
+	display: none;
+}
+
+.nav img {
+    display: block;
+    padding: 15px 50px;
+    width: 250px;
+}
+
+.scritte {
+    position: flex;
+    position: fixed;
+    right: 0%;
+    padding-top: 30px;
+    padding-right: 50px;
+}
+
+.burger-check {
+    display: none;
+}
+
+a {
+    display: inline;
+    padding-right: 30px;
+}
+
+.form {padding-top: 90px;}
+
+.row-wrap {
+    display: flex;
+    flex-flow: row wrap;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.field {
+    width: 50%;
+}
+
+.field input {
+    width: 90%;
+    height: 40px;
+}
+
+.tname, .temail, .tordine, .tcognome, .ttelefono, .thelp, .messaggio, .tnewsletter { margin-bottom: 5px; }
+
+.name, .surname, .email, .ordine, .telefono { padding-right: 50;}
+
+.help {
+    width: 90%;
+    height: 40px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-right: 50;
+}
+
+.text {
+    width: 100%;
+}
+
+.box-1, .box-2 {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.first, .second {
+    padding-left: 5px;
+}
+
+.first-box, .second-box {
+    margin-top: 18px;
+}
+
+.bottone {
+    background: #000000;
+    color: #FFFFFF;
+    padding: 10px 70px 10px 70px;
+    border: 0px solid #000000;
+    float: right;
+}
+
+.shift {
+	float: right;
+}
+
+@media screen and (max-width: 600px) {
+    .nav img {
+        display: none;
+    }
+    
+    .scritte {
+		background-color: #333;
+		padding-top: 10px;
+		padding-left: 10px;
+		width: 100%;
+		color: #FFFFFF;
+		margin-right: 0%;
+	}
+	
+	.field {
+        width: 100%;
+    }
+    
+    .row-wrap {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        padding-left: 30px;
+        padding-right: 0px;
+    }
+
+    .text {
+        width: 100%;
+        margin-right: 30px;
+    }
+
+    .box-1, .box-2 {
+        display: inline-block;
+        width: 100%;
+        justify-content: left;
+    }
+
+    p {
+        display: inline;
+    }
+
+    .bottone {
+        width: 100%;
+    }
+    .Newsletter {
+        width: 100%;
+        padding-right: 40px;
+    }  
+    .shift {
+        padding-top: 10px;
+        padding-right: 30px;
+    }
+	
+	.immagine-footer {
+		display: none;
+	}
+	
+	.azienda, .community, .utili {
+		display: flex;
+        justify-content: center;
+		width: 100%;
+	}
+	
+	
+	
+	.nav a:not(:first-child) {display: none;}
+	.nav a.icon { display: block; }
+	
+	/*.nav.responsive {position: relative;}*/
+	.nav.responsive .icon {
+		/*position: absolute;*/
+		padding-right: 20px;
+		top: 30px;
+	}
+	
+	.nav.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+  
+	.icon {
+		padding-top: 20px;
+    }
+    
+    .immagine-footer {
+        display: none;
+    }
+    
+	
+	.total {
+		display: flex;
+		flex-flow: column no-wrap;
+	}
+}
+
+footer {
+    background: black;
+	color: #FFFFFF;
+    position: static;
+    display: flex;
+    justify-content: center;
+}
+
+.total {
+    display: flex;
+    padding-top: 70px;
+}
+
+.immagine-footer {
+    padding: 15px 50px;
+    width: 300px;
+}
+
+.azienda, .community, .utili, .immagine {
+    position: static;
+    padding-right: 50px;
+}
+
+h5 {
+    text-transform: uppercase;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding-bottom: 20px;
+}
+
+
+.nav {
+  overflow: hidden;
+  background-color: #333;
+}
+.nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.nav .icon {
+  display: none;
+}
